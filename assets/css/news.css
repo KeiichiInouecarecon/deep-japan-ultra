@@ -1,26 +1,41 @@
 @charset "UTF-8";
 .main_title{
   text-align: center;
-  background-image: url(../../images/top_02.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 25%;
-  margin-top: 40px;
   padding: 20px 0;
-}
-
-@media screen and (max-width: 768px){
-  .main_title{
-    background-size: 67%;
-  }
+  height: 342px;
+  background:linear-gradient(#00476F, #2BCBFC);
 }
 
 .main_title h2{
   font-size: 42px;
+  position: relative;
+  top: 14%;
+  left: 0;
 }
 
 .main_title p{
   font-size: 16px;
+  position: relative;
+  top: 18%;
+  left: 0;
+}
+
+@media screen and (max-width: 768px){
+  .main_title{
+    height: 234px;
+  }
+
+  .main_title h2{
+    font-size: 28px;
+    top: 22%;
+  }
+  
+  .main_title p{
+    font-size: 14px;
+    top: 25%;
+  }
 }
 
 .section01{

@@ -5,6 +5,7 @@
   display: block;
   position: fixed;
   top:0;
+  z-index: 5;
 }
 .header.scroll-nav{
   background:linear-gradient(#00476F, #2BCBFC);
@@ -37,6 +38,7 @@
     background-image: url(../../images/top_bk_img.png);
     position: fixed;
     top:0;
+    z-index: 5;
   }
 
   .header_bg{
@@ -347,6 +349,13 @@ h1{
   left: -40px;
 }
 
+.background_icon_img{
+  width: 25%;
+  position: relative;
+  top: 40%;
+  left: 0;
+}
+
 .bg_img p{
   position: relative;
   top: -70px;
@@ -455,6 +464,11 @@ h1{
     vertical-align: middle;
     width: 75px;
     height: 15px;
+  }
+
+  .background_icon_img{
+    width: 60%;
+    top: 50%;
   }
 }
 /* SP トップヴィジュアル */
