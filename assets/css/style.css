@@ -2,13 +2,15 @@
 
 .header{
   padding-top: 30px;
+  width: 100%;
   display: block;
   position: fixed;
   top:0;
+  z-index: 5;
 }
 .header.scroll-nav{
-  background:linear-gradient(#00476F, #2BCBFC);
-  opacity: 0.8;
+  background-color:#00476F;
+  height: 85px;
 }
 
 .header_sp{
@@ -37,6 +39,7 @@
     background-image: url(../../images/top_bk_img.png);
     position: fixed;
     top:0;
+    z-index: 5;
   }
 
   .header_bg{
@@ -112,8 +115,15 @@ main p {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: #000;
+  background-color: #fff;
   transition: all .5s;
+}
+.menu-trigger p {
+  position: relative;
+  top: 2rem;
+  width: 100%;
+  font-size: 11px;
+  font-family: Russo One;
 }
 .menu-trigger.active span {
   background-color: #fff;
@@ -286,6 +296,12 @@ nav li::after{
   margin-left: 43px;
 }
 
+.header.scroll-nav .header_nav img{
+  width: 55%;
+  position: relative;
+  top: -1rem;
+}
+
 h1{
   width: 15%;
 }
@@ -347,6 +363,13 @@ h1{
   left: -40px;
 }
 
+.background_icon_img{
+  width: 25%;
+  position: relative;
+  top: 40%;
+  left: 0;
+}
+
 .bg_img p{
   position: relative;
   top: -70px;
@@ -394,6 +417,32 @@ h1{
 .pc-wrapper .btn span{
   font-size: 1rem;
   margin-left: 10px;
+}
+
+.pc-wrapper .scroll{
+  position: relative;
+}
+.pc-wrapper .scroll .text{
+  color: #FFCB00;
+  margin: 0 auto;
+  padding: 0px;
+  position: absolute;
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100%);
+  left: -2vw;
+  top: -24vh;
+}
+
+.pc-wrapper .scroll .text::before{
+  content:"";
+  display: inline-block;
+  background-image: url(../../images/arrow_yellow02.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  vertical-align: middle;
+  width: 82px;
+  height: 21px;
 }
 
 .pc-wrapper .img{
@@ -455,6 +504,11 @@ h1{
     vertical-align: middle;
     width: 75px;
     height: 15px;
+  }
+
+  .background_icon_img{
+    width: 60%;
+    top: 50%;
   }
 }
 /* SP トップヴィジュアル */
@@ -537,6 +591,18 @@ h1{
   margin-bottom: 10px;
 }
 
+.box1-2 p::after{
+  content:"";
+  display: inline-block;
+  background-image: url(../../images/arrow_yellow.png);
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-size: contain;
+  vertical-align: middle;
+  width: 68px;
+  height: 8px;
+}
+
 @media screen and (max-width: 768px){
   .box1-2{
     padding: 10px 40px 15px 20px;
@@ -550,7 +616,7 @@ h1{
 
 .section03 .wrapper01{
   display: flex;
-  padding: 10px 133px;
+  padding: 122px 133px 97px;
   justify-content: space-around;
 }
 
@@ -815,6 +881,7 @@ h1{
   justify-content: flex-start;
   position: relative;
   height: 350px;
+  margin-top: 90px;
 }
 
 .footer img{
@@ -826,7 +893,7 @@ h1{
 .ul-flex{
   display: flex;
   position: absolute;
-  right: 0vh;
+  right: 36vh;
 }
 
 .ul-flex ul{
@@ -839,7 +906,12 @@ h1{
 
 .ul-flex li{
   margin-top: 20px;
+  padding: 15px;
   position: relative;
+}
+
+.ul-flex li:first-child{
+  margin-top: 0px;
 }
 
 .ul-flex li::after{
@@ -854,6 +926,7 @@ h1{
   background-color: white;
   padding: 20px 10px;
   width: 20%;
+  margin-top: 134px;
   margin-bottom: 20px;
 }
 .btn-01 a{
@@ -879,7 +952,11 @@ h1{
   padding: 20px 9px;
   width: 20%;
   border: solid 1px white;
-  margin-bottom: 40px;
+  margin-bottom: 52px;
+}
+
+.btn-02 p{
+  margin-bottom: 0px;
 }
 
 .btn-02 a{
@@ -903,6 +980,7 @@ h1{
   text-align: center;
   font-size: 0.8rem;
   margin-bottom: 40px;
+  color: white;
 }
 
 @media screen and (max-width: 768px){

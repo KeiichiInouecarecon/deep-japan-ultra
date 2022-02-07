@@ -14,6 +14,7 @@
     <!-- ↓css、js↓ -->
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/jquery.slider.css">
     <!-- <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script> -->
     <script type="text/javascript" src="./assets/js/include.js"></script>
     <!-- ↑css、js↑ -->
@@ -42,6 +43,7 @@
         <span></span>
         <span></span>
         <span></span>
+        <p>MENU</p>
       </div>
       <nav>
         <div class="nav_flex">
@@ -101,6 +103,7 @@
         <span></span>
         <span></span>
         <span></span>
+        <p>MENU</p>
       </div>
       <nav>
         <div class="nav_flex">
@@ -148,6 +151,9 @@
           <p class="date">6.24 <span>FRI</span> - 6.26 <span>SUN</span></p>
           <p>新潟県三条市・加茂市・魚沼市・長岡市・福島県只見町</p>
           <p class="btn"><a href="">ENTRY<span>エントリー</span></a></p>
+          <div class="scroll">
+            <p class="text">SCROLL</p>
+          </div>
         </div>
         <div class="img">
           <img src="./images/top.png">
@@ -340,6 +346,20 @@
     
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./assets/js/include.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.slider.js"></script>
+    <script>
+        $(function() {
+            $('#slider').slider({
+                showControls: true,
+                autoplay: true,
+                showPosition: true,
+                hoverPause: true,
+                wait: 3500,
+                fade: 500,
+                direction: "left"
+            });
+        });
+        </script>
   </body>
 
 </html>
